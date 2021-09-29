@@ -1,0 +1,62 @@
+<component name="ProjectCodeStyleConfiguration">
+  <code_scheme name="Project" version="173">
+    <GoCodeStyleSettings>
+      <option name="RUN_GO_FMT_ON_REFORMAT" value="false" />
+    </GoCodeStyleSettings>
+    <JavaCodeStyleSettings>
+      <option name="ALIGN_MULTILINE_ANNOTATION_PARAMETERS" value="true" />
+      <option name="ALIGN_MULTILINE_TEXT_BLOCKS" value="true" />
+      <option name="ENABLE_JAVADOC_FORMATTING" value="false" />
+      <option name="JD_ALIGN_PARAM_COMMENTS" value="false" />
+      <option name="JD_ADD_BLANK_AFTER_DESCRIPTION" value="false" />
+    </JavaCodeStyleSettings>
+    <JetCodeStyleSettings>
+      <option name="ALLOW_TRAILING_COMMA" value="true" />
+      <option name="BLANK_LINES_BEFORE_DECLARATION_WITH_COMMENT_OR_ANNOTATION_ON_SEPARATE_LINE" value="0" />
+      <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
+    </JetCodeStyleSettings>
+    <RsCodeStyleSettings>
+      <option name="ALIGN_WHERE_CLAUSE" value="true" />
+      <option name="ALIGN_TYPE_PARAMS" value="true" />
+      <option name="PRESERVE_PUNCTUATION" value="true" />
+      <option name="SPACE_AROUND_ASSOC_TYPE_BINDING" value="true" />
+    </RsCodeStyleSettings>
+    <ScalaCodeStyleSettings>
+      <option name="MULTILINE_STRING_CLOSING_QUOTES_ON_NEW_LINE" value="true" />
+    </ScalaCodeStyleSettings>
+    <codeStyleSettings language="JAVA">
+      <option name="ALIGN_MULTILINE_CHAINED_METHODS" value="true" />
+      <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="true" />
+      <option name="ALIGN_MULTILINE_ASSIGNMENT" value="true" />
+      <option name="TERNARY_OPERATION_SIGNS_ON_NEXT_LINE" value="true" />
+      <indentOptions>
+        <option name="CONTINUATION_INDENT_SIZE" value="4" />
+        <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+      </indentOptions>
+    </codeStyleSettings>
+    <codeStyleSettings language="Python">
+      <indentOptions>
+        <option name="CONTINUATION_INDENT_SIZE" value="4" />
+        <option name="USE_TAB_CHARACTER" value="true" />
+        <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+      </indentOptions>
+    </codeStyleSettings>
+    <codeStyleSettings language="Rust">
+      <option name="BLOCK_COMMENT_AT_FIRST_COLUMN" value="true" />
+      <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="1" />
+      <option name="KEEP_BLANK_LINES_IN_CODE" value="1" />
+      <option name="ALIGN_MULTILINE_PARAMETERS_IN_CALLS" value="false" />
+    </codeStyleSettings>
+    <codeStyleSettings language="go">
+      <indentOptions>
+        <option name="KEEP_INDENTS_ON_EMPTY_LINES" value="true" />
+      </indentOptions>
+    </codeStyleSettings>
+    <codeStyleSettings language="kotlin">
+      <option name="CODE_STYLE_DEFAULTS" value="KOTLIN_OFFICIAL" />
+      <option name="KEEP_BLANK_LINES_IN_DECLARATIONS" value="0" />
+      <option name="KEEP_BLANK_LINES_IN_CODE" value="0" />
+      <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="0" />
+    </codeStyleSettings>
+  </code_scheme>
+</component>

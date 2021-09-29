@@ -1,0 +1,1 @@
+rootProject.name = "com.alias111.ktorcaelistodolist"

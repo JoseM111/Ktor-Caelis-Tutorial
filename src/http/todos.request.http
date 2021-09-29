@@ -1,0 +1,7 @@
+### GET request home route
+GET http://localhost:8080
+Accept: application/json
+
+### GET request for todos
+GET http://localhost:8080/todos
+Accept: application/json
