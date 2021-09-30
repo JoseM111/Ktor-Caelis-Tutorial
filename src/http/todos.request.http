@@ -5,3 +5,8 @@ Accept: application/json
 ### GET request for todos
 GET http://localhost:8080/todos
 Accept: application/json
+
+### GET request for todos by:{id}
+GET http://localhost:8080/todos/3
+Accept: application/json
+
