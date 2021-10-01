@@ -17,18 +17,14 @@ class TodoRepository : ITodoRepository {
 
     override fun repoAddTodo(todoDraft: TodoDraftEntity): TodoEntity {
         // ™ ____________
-        val todo = TodoEntity(
+        val newTodo = TodoEntity(
             id = todosData.size + 1,
             title = todoDraft.title,
             isDone = todoDraft.isDone,
         )
 
-        todosData.add(todo)
-        return todo
-    }
-
-    override fun repoRemoveTodo(id: Int): Boolean = todosData.removeIf { the: TodoEntity ->
-        the.id == id
+        todosData.add(newTodo)
+        return newTodo
     }
 
     override fun repoUpdateTodo(id: Int, todoDraft: TodoDraftEntity): Boolean {
@@ -43,6 +39,10 @@ class TodoRepository : ITodoRepository {
         todo.isDone = todoDraft.isDone
 
         return true
+    }
+
+    override fun repoRemoveTodo(id: Int): Boolean = todosData.removeIf { the: TodoEntity ->
+        the.id == id
     }
 }
 // ⚫️⚫️☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰
