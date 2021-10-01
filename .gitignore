@@ -1,38 +1,26 @@
-build
-.gradle
-.gradletasknamecache
-.idea/*
-!.idea/runConfigurations
-!.idea/runConfigurations/*
-!.idea/vcs.xml
-!.idea/dictionaries
-!.idea/dictionaries/*
-!.idea/copyright
-!.idea/copyright/*
-!.idea/codeStyles
-!.idea/codeStyles/*
-!.idea/icon.png
 out
-*.iml
-.vscode
+gen
 
-*.versionsBackup
-*.releaseBackup
-release.properties
-local.properties
-*.swp
-
-.video
-.attach_pid*
-apidoc
+**/build
+.gradle
 
 
-bin/
-.settings
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/bower_components
+
+# IDEs and editors
+/.idea
+*iml
 .project
 .classpath
-.konan
+*.launch
+.settings/
 
+
+#System Files
 .DS_Store
-
-hs_err_pid*.log
+Thumbs.db
+Copied

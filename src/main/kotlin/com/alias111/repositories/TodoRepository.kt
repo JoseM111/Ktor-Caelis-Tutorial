@@ -20,7 +20,7 @@ class TodoRepository : ITodoRepository {
         val newTodo = TodoEntity(
             id = todosData.size + 1,
             title = todoDraft.title,
-            isDone = todoDraft.isDone,
+            done = todoDraft.done,
         )
 
         todosData.add(newTodo)
@@ -36,7 +36,7 @@ class TodoRepository : ITodoRepository {
 
         // update our todos
         todo.title = todoDraft.title
-        todo.isDone = todoDraft.isDone
+        todo.done = todoDraft.done
 
         return true
     }
