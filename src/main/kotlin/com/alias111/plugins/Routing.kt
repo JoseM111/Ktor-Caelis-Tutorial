@@ -3,7 +3,8 @@ package com.alias111.plugins
 
 import com.alias111.entities.TodoDraftEntity
 import com.alias111.entities.TodoEntity
-import com.alias111.repositories.TodoRepository
+import com.alias111.repositories.ITodoRepository
+import com.alias111.repositories.PostgresTodoRepository
 import io.ktor.routing.*
 import io.ktor.application.*
 import io.ktor.features.*
@@ -17,7 +18,7 @@ import io.ktor.response.*
 // ⚫️⚫️☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰
 fun Application.configureRouting(): Unit {
     // ™ ____________
-    val todoRepo = TodoRepository()
+    val todoRepo: ITodoRepository = PostgresTodoRepository()
 
     jsonOutputConfig()
     // ⚫️⚫️☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰
@@ -107,7 +108,7 @@ fun Application.configureRouting(): Unit {
             }
         }
 
-        /** @DELETE: request: deletes todos by id  |*/
+        /** @DELETE: request: deletes todos by id |*/
         delete(path = "/todos/{id}") {
             // ™ ____________
             val todoId: Int? = call.parameters["id"]?.toIntOrNull()

@@ -1,4 +1,4 @@
-/** TodoEntity.kt */
+/** DBTodoTable.kt */
 package com.alias111.entities
 
 //import kotlinx.serialization.*
@@ -8,6 +8,6 @@ package com.alias111.entities
 data class TodoEntity(
     val id: Int,
     var title: String,
-    var isDone: Boolean,
+    var done: Boolean,
 )
 // ⚫️⚫️☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰
