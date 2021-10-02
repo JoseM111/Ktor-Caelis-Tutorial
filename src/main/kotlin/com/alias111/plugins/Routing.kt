@@ -4,7 +4,7 @@ package com.alias111.plugins
 import com.alias111.entities.TodoDraftEntity
 import com.alias111.entities.TodoEntity
 import com.alias111.repositories.ITodoRepository
-import com.alias111.repositories.PostgresTodoRepository
+import com.alias111.repositories.MySqlTodoRepository
 import io.ktor.routing.*
 import io.ktor.application.*
 import io.ktor.features.*
@@ -18,7 +18,7 @@ import io.ktor.response.*
 // ⚫️⚫️☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰
 fun Application.configureRouting(): Unit {
     // ™ ____________
-    val todoRepo: ITodoRepository = PostgresTodoRepository()
+    val todoRepo: ITodoRepository = MySqlTodoRepository()
 
     jsonOutputConfig()
     // ⚫️⚫️☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰
