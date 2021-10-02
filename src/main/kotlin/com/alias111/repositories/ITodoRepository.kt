@@ -13,8 +13,8 @@ interface ITodoRepository {
 
     fun repoAddTodo(todoDraft: TodoDraftEntity): TodoEntity
 
-    fun repoRemoveTodo(id: Int): Boolean
-
     fun repoUpdateTodo(id: Int, todoDraft: TodoDraftEntity): Boolean
+
+    fun repoRemoveTodo(id: Int): Boolean
 }
 // ⚫️⚫️☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰

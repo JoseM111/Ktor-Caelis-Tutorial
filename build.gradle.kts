@@ -30,5 +30,5 @@ dependencies {
     // ########################################################## DATABASE
     implementation("io.ktor:ktor-serialization:$ktor_version")
     testImplementation("io.ktor:ktor-server-tests:$ktor_version")
-    testImplementation(kotlin("test", kotlin_version))
+    testImplementation("org.jetbrains.kotlin:kotlin-test:1.5.31")
 }

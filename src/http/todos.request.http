@@ -15,21 +15,21 @@ POST http://localhost:8080/todos
 Content-Type: application/json
 
 {
-  "title": "Todo #1",
+  "title": "Checking socket exception",
   "done": false
 }
 
-### POST repoAddTodo:{id}
-PUT http://localhost:8080/todos/1
+### POST repoUpdateTodo:{id}
+PUT http://localhost:8080/todos/5
 Content-Type: application/json
 
 {
-  "title": "Updating the todo",
+  "title": "post working fine",
   "done": false
 }
 
 ### POST repoRemoveTodo
-DELETE http://localhost:8080/todos/1
+DELETE http://localhost:8080/todos/2
 Content-Type: application/json
 
 
